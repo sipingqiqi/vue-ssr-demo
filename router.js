@@ -8,7 +8,7 @@ export function createRouter () {
   return new Router({
     mode: 'history',
     routes: [
-      { path: '/hello', component: Index }
+      { path: '/', component: Index }
     ]
   })
 }

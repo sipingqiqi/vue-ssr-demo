@@ -34,7 +34,7 @@ readyPromise = require('./build/setup-dev-server')(server, (bundle, options) => 
 
 server.get('*', (req, res) => {
   const context = {
-    title: '网易严选',
+    title: '我的主页',
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {

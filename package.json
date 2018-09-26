@@ -7,18 +7,15 @@
     "build": "npm run build:client && npm run build:server",
     "build:server": "webpack --config build/webpack.server.config.js",
     "build:client": "webpack --config build/webpack.client.config.js",
-    "build1": "babel --ignore node_modules,test,assets,stuff,views,public,test,spec,logs,lib/jasmine_examples,db,routes/api/drafts,**/drafts -d ./dist/ ./",
-    "dev": "npm run build && node server.js",
-    "local": "node local.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "npm run build && node server.js",
+    "dev": "node local.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1",
-    "vue-server-renderer": "^2.5.17"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -32,6 +29,7 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
+    "vue-server-renderer": "^2.5.17",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8",

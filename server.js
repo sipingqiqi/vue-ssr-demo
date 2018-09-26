@@ -19,7 +19,7 @@ server.get('*', (req, res) => {
   const renderer = createBundleRenderer(bundle, {
     runInNewContext: false,
     clientManifest,
-    template: fs.readFileSync('./index.html', 'utf-8')
+    template: fs.readFileSync('./templates/index.html', 'utf-8')
   })
 
   renderer.renderToString(context, (err, html) => {
